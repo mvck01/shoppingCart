@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    
+}
+
+.navSection{
+    border: 1px solid black;
+    background-color:#000080;
+    color: white;
+    height: 90px;
+    width: 100%;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 60px;
+}
+
+li{
+    list-style: none;
+    margin-top: .9rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.imgHere{
+    width: 50px;
+    height: 50px;
+    background: white;
+    margin-top: -1rem;
+    background-position: center;
+    background-size: cover;
+    padding: .2rem;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1rem;
+}
+
+.cart{
+    position: relative;
+}
+
+.cartAmount{
+    color:white;
+    background-color:red;
+    padding: .2rem;
+    font-size: 16px;
+    position: absolute;
+    top: -30px;
+    right: -10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* bodySection */
+.mainBody{
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(4,223px);
+    justify-content: center;
+    gap: 30px;
+}
+
+.productCard{
+    border: 1px solid #212529;
+    height: 400px;
+    width: 100%;
+    max-width: 250px;
+    /* text-align: center; */
+    padding: .5rem .4rem;
+    margin: .5rem ; 
+}
+
+.imgSizing{
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes extra space below the image */
+    margin: 0 auto; 
+}
+.productDetails{
+    margin-top: 1rem;
+}
+
+.productDetails p{
+    margin-top: .7rem;
+    line-height: 1.25rem;
+}
+
+.priceDetails{
+    margin-top: 1rem;
+    font-weight: bolder;
+    font-size: 1.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.currentQuantity{
+    margin-top: .3rem;
+    font-weight:300;
+    font-size: 1.25rem;
+}
+
+.quantityBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* cursor: pointer; */
+}
+.quantityBtn i{
+    cursor: pointer;
+}
+.addQuantity{
+    color: green;
+    cursor: pointer;
+}
+.subQuantity{
+    color: red;
+    cursor: pointer;
+}
+
+
+/* CartPage Section Begins */
+#totalCheckoutOrClear{
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+#checkoutBtn{
+    background: green;
+    padding: .5rem;
+    color: white;
+    cursor: pointer;border: none;
+}
+
+#clearCartBtn{
+    background: red;
+    padding: .5rem;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+
+.cartBody{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#emptyShop{
+    line-height: 4rem;
+}
+#homeBtn{
+    padding: .5rem;
+    background-color: #000080;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+
+/* cart section begines */
+
+.cartCards{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 340px;
+    height: 110px;
+    gap: .5rem;
+    margin: 1rem auto 1rem auto;
+
+}
+.imgSettings{
+    padding: .2rem;
+    height: 105px;
+    width: 110px;
+}
+
+.detailsSection{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.itemDetails{
+    width: 215px;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction:row;
+    gap: 1.5rem   ;
+    justify-content: space-around;
+
+}
+.itemName{
+    font-weight: bold;
+    
+}
+.priceList{
+    background-color: #212529;
+    font-weight: bold;
+    color: white;
+    padding: .2rem;
+}
+#deleteBtn{
+    /* margin-left:1.5rem; */
+    cursor: pointer;
+    color: red;
+}
+
+.amountDetails{
+    display: flex;
+    flex-direction: row;
+    margin-top: .5rem;
+}
+.totalPrice{
+    margin-top: .7rem;
+    font-weight: bold;
+}
+
+/* cart section ends */
+
+/* CartPage Section Ends */
+
+
+/* MediaWidths */
+
+@media(max-width:1000px){
+    .mainBody{
+        grid-template-columns: repeat(2,223px);
+    }
+}
+@media(max-width:500px){
+    .mainBody{
+        grid-template-columns: repeat(1,223px);
+    }
+}
+
+/* MediaWidths Ends */
